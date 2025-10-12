@@ -1,22 +1,22 @@
-{% extends "base.html" %}
-{% block title %}Przepisy — kuchnia{% endblock %}
-{% block content %}
-  <h1>Przepisy</h1>
+<!-- templates/recipes/recipe_list.html -->
+<h1>Przepisy</h1>
 
-  <div class="grid">
-    {% for recipe in object_list %}
-      <article class="card">
-        <h2 style="margin:.2rem 0">
-          <a href="{% url 'recipes:recipe_detail' recipe.slug %}">{{ recipe.title }}</a>
-        </h2>
-        {% if recipe.description %}
-          <p class="muted">{{ recipe.description|truncatewords:24 }}</p>
-        {% endif %}
-        <a href="{% url 'recipes:recipe_detail' recipe.slug %}">Zobacz przepis →</a>
-      </article>
-    {% empty %}
-      <p>Brak przepisów.</p>
-    {% endfor %}
-  </div>
+{% if active_category %}<p>Kategoria: {{ active_category.name }}</p>{% endif %}
+{% if active_tag %}<p>Tag: {{ active_tag.name }}</p>{% endif %}
 
-{% endblock %}
+<ul>
+  {% for r in object_list %}
+    <li>
+      <a href="{% url 'recipes:recipe_detail' r.slug %}">{{ r.title }}</a>
+      {% if r.category %} — <a href="{% url 'recipes:recipe_by_category' r.category.slug %}">{{ r.category.name }}</a>{% endif %}
+      {% if r.tags.all %}
+        ·
+        {% for t in r.tags.all %}
+          <a href="{% url 'recipes:recipe_by_tag' t.slug %}">#{{ t.name }}</a>{% if not forloop.last %}, {% endif %}
+        {% endfor %}
+      {% endif %}
+    </li>
+  {% empty %}
+    <li>Brak przepisów.</li>
+  {% endfor %}
+</ul>

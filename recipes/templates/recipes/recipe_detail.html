@@ -1,33 +1,25 @@
-{% extends "base.html" %}
-{% block title %}{{ object.title }} — kuchnia{% endblock %}
-{% block content %}
-  <article>
-    <h1>{{ object.title }}</h1>
+<!-- templates/recipes/recipe_detail.html -->
+<h1>{{ object.title }}</h1>
+<p>{{ object.description }}</p>
+<p><strong>Składniki:</strong></p>
+<p>{{ object.ingredients|linebreaks }}</p>
+<p><strong>Instrukcje:</strong></p>
+<p>{{ object.instructions|linebreaks }}</p>
 
-    {% if object.image %}
-      <img src="{{ object.image.url }}" alt="{{ object.title }}">
-    {% endif %}
 
-    {% if object.description %}
-      <p class="muted" style="margin-top:8px">{{ object.description }}</p>
-    {% endif %}
+<p>
+  Kategoria:
+  {% if object.category %}
+    <a href="{% url 'recipe_by_category' object.category.slug %}">{{ object.category.name }}</a>
+  {% else %}—{% endif %}
+</p>
 
-    <section>
-      <h2>Składniki</h2>
-      <ul>
-        {% for line in object.ingredients.splitlines %}
-          {% if line %}<li>{{ line }}</li>{% endif %}
-        {% endfor %}
-      </ul>
-    </section>
-
-    <section>
-      <h2>Przygotowanie</h2>
-      <div>
-        {{ object.instructions|linebreaks }}
-      </div>
-    </section>
-
-    <p style="margin-top:16px"><a href="{% url 'recipes:recipe_list' %}">← Wróć do listy</a></p>
-  </article>
-{% endblock %}
+<p>
+  Tagi:
+  {% for t in object.tags.all %}
+    <a href="{% url 'recipe_by_tag' t.slug %}">#{{ t.name }}</a>{% if not forloop.last %}, {% endif %}
+  {% empty %}—{% endfor %}
+</p>
+{% if object.image %}
+  <img src="{{ object.image.url }}" alt="{{ object.title }}">
+{% endif %}
