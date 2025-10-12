@@ -1,0 +1,6 @@
+{% extends "base.html" %}
+{% block title %}Strona główna — kuchnia{% endblock %}
+{% block content %}
+  <h1>Witaj w ro_kuchnia</h1>
+  <p>Przejdź do <a href="{% url 'recipes:recipe_list' %}">lista przepisów</a>.</p>
+{% endblock %}

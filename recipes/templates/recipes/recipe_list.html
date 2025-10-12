@@ -1,0 +1,22 @@
+{% extends "base.html" %}
+{% block title %}Przepisy — kuchnia{% endblock %}
+{% block content %}
+  <h1>Przepisy</h1>
+
+  <div class="grid">
+    {% for recipe in object_list %}
+      <article class="card">
+        <h2 style="margin:.2rem 0">
+          <a href="{% url 'recipes:recipe_detail' recipe.slug %}">{{ recipe.title }}</a>
+        </h2>
+        {% if recipe.description %}
+          <p class="muted">{{ recipe.description|truncatewords:24 }}</p>
+        {% endif %}
+        <a href="{% url 'recipes:recipe_detail' recipe.slug %}">Zobacz przepis →</a>
+      </article>
+    {% empty %}
+      <p>Brak przepisów.</p>
+    {% endfor %}
+  </div>
+
+{% endblock %}
