@@ -3,9 +3,17 @@
 
 {% if active_category %}<p>Kategoria: {{ active_category.name }}</p>{% endif %}
 {% if active_tag %}<p>Tag: {{ active_tag.name }}</p>{% endif %}
-
+<form method="get" class="search-bar" style="margin-bottom:1rem;">
+  <input
+    type="text"
+    name="q"
+    value="{{ q }}"
+    placeholder="Szukaj po tytule, składnikach..."
+  />
+  <button type="submit">Szukaj</button>
+</form>
 <ul>
-  {% for r in object_list %}
+  {% for r in recipes %}
     <li>
       <a href="{% url 'recipes:recipe_detail' r.slug %}">{{ r.title }}</a>
       {% if r.category %} — <a href="{% url 'recipes:recipe_by_category' r.category.slug %}">{{ r.category.name }}</a>{% endif %}

@@ -10,14 +10,14 @@
 <p>
   Kategoria:
   {% if object.category %}
-    <a href="{% url 'recipe_by_category' object.category.slug %}">{{ object.category.name }}</a>
+    <a href="{% url 'recipes:recipe_by_category' recipe.category.slug %}">{{ object.category.name }}</a>
   {% else %}—{% endif %}
 </p>
 
 <p>
   Tagi:
   {% for t in object.tags.all %}
-    <a href="{% url 'recipe_by_tag' t.slug %}">#{{ t.name }}</a>{% if not forloop.last %}, {% endif %}
+    <a href="{% url 'recipes:recipe_by_tag' t.slug %}">#{{ t.name }}</a>{% if not forloop.last %}, {% endif %}
   {% empty %}—{% endfor %}
 </p>
 {% if object.image %}
