@@ -6,7 +6,6 @@ class Recipe(models.Model):
     description = models.TextField(blank=True)
     ingredients = models.TextField()
     instructions = models.TextField()
-    image = models.ImageField(upload_to='recipes/', blank=True, null=True)
 
     category = models.ForeignKey('Category', on_delete=models.SET_NULL, null=True, related_name='recipes')
     tags = models.ManyToManyField('Tag', related_name='recipes', blank=True)

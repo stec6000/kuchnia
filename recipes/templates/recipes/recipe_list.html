@@ -3,15 +3,14 @@
 
 {% if active_category %}<p>Kategoria: {{ active_category.name }}</p>{% endif %}
 {% if active_tag %}<p>Tag: {{ active_tag.name }}</p>{% endif %}
-<form method="get" class="search-bar" style="margin-bottom:1rem;">
-  <input
-    type="text"
-    name="q"
-    value="{{ q }}"
-    placeholder="Szukaj po tytule, składnikach..."
-  />
-  <button type="submit">Szukaj</button>
+
+<h2>Filtry</h2>
+<form method="get">
+  {{ filter.form.as_p }}
+  <button type="submit">Filtruj</button>
 </form>
+
+<hr>
 <ul>
   {% for r in recipes %}
     <li>

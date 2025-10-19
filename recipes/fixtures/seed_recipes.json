@@ -1,0 +1,723 @@
+[
+  {
+    "model": "recipes.category",
+    "pk": 1,
+    "fields": {
+      "name": "Śniadanie",
+      "slug": "sniadanie"
+    }
+  },
+  {
+    "model": "recipes.category",
+    "pk": 2,
+    "fields": {
+      "name": "Obiad",
+      "slug": "obiad"
+    }
+  },
+  {
+    "model": "recipes.category",
+    "pk": 3,
+    "fields": {
+      "name": "Kolacja",
+      "slug": "kolacja"
+    }
+  },
+  {
+    "model": "recipes.category",
+    "pk": 4,
+    "fields": {
+      "name": "Zupa",
+      "slug": "zupa"
+    }
+  },
+  {
+    "model": "recipes.category",
+    "pk": 5,
+    "fields": {
+      "name": "Deser",
+      "slug": "deser"
+    }
+  },
+  {
+    "model": "recipes.category",
+    "pk": 6,
+    "fields": {
+      "name": "Przekąska",
+      "slug": "przekaska"
+    }
+  },
+  {
+    "model": "recipes.tag",
+    "pk": 1,
+    "fields": {
+      "name": "szybkie",
+      "slug": "szybkie"
+    }
+  },
+  {
+    "model": "recipes.tag",
+    "pk": 2,
+    "fields": {
+      "name": "wegetariańskie",
+      "slug": "wegetarianskie"
+    }
+  },
+  {
+    "model": "recipes.tag",
+    "pk": 3,
+    "fields": {
+      "name": "wegańskie",
+      "slug": "weganskie"
+    }
+  },
+  {
+    "model": "recipes.tag",
+    "pk": 4,
+    "fields": {
+      "name": "bezglutenowe",
+      "slug": "bezglutenowe"
+    }
+  },
+  {
+    "model": "recipes.tag",
+    "pk": 5,
+    "fields": {
+      "name": "ostre",
+      "slug": "ostre"
+    }
+  },
+  {
+    "model": "recipes.tag",
+    "pk": 6,
+    "fields": {
+      "name": "fit",
+      "slug": "fit"
+    }
+  },
+  {
+    "model": "recipes.tag",
+    "pk": 7,
+    "fields": {
+      "name": "dzieci",
+      "slug": "dzieci"
+    }
+  },
+  {
+    "model": "recipes.tag",
+    "pk": 8,
+    "fields": {
+      "name": "makaron",
+      "slug": "makaron"
+    }
+  },
+  {
+    "model": "recipes.tag",
+    "pk": 9,
+    "fields": {
+      "name": "ryż",
+      "slug": "ryz"
+    }
+  },
+  {
+    "model": "recipes.tag",
+    "pk": 10,
+    "fields": {
+      "name": "czekolada",
+      "slug": "czekolada"
+    }
+  },
+  {
+    "model": "recipes.tag",
+    "pk": 11,
+    "fields": {
+      "name": "ser",
+      "slug": "ser"
+    }
+  },
+  {
+    "model": "recipes.tag",
+    "pk": 12,
+    "fields": {
+      "name": "owoce",
+      "slug": "owoce"
+    }
+  },
+  {
+    "model": "recipes.tag",
+    "pk": 13,
+    "fields": {
+      "name": "ryba",
+      "slug": "ryba"
+    }
+  },
+  {
+    "model": "recipes.tag",
+    "pk": 14,
+    "fields": {
+      "name": "drobiowe",
+      "slug": "drobiowe"
+    }
+  },
+  {
+    "model": "recipes.tag",
+    "pk": 15,
+    "fields": {
+      "name": "wołowina",
+      "slug": "wolowina"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 1,
+    "fields": {
+      "title": "Naleśniki klasyczne",
+      "slug": "nalesniki-klasyczne",
+      "description": "Puszyste naleśniki idealne na śniadanie.",
+      "ingredients": "Mąka pszenna 200 g\nMleko 300 ml\nJajka 2 szt\nSzczypta soli\nMasło do smażenia",
+      "instructions": "Wymieszaj składniki na gładkie ciasto. Odstaw na 10 min. Smaż cienkie placki na rozgrzanej patelni z odrobiną masła.",
+      "category": 1,
+      "tags": [
+        1,
+        7
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 2,
+    "fields": {
+      "title": "Owsianka z owocami",
+      "slug": "owsianka-z-owocami",
+      "description": "Kremowa owsianka z sezonowymi owocami.",
+      "ingredients": "Płatki owsiane 60 g\nMleko lub napój roślinny 250 ml\nMiód 1 łyżka\nOwoce garść",
+      "instructions": "Gotuj płatki w mleku 5–7 min, dodaj miód i owoce.",
+      "category": 1,
+      "tags": [
+        1,
+        6,
+        12
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 3,
+    "fields": {
+      "title": "Jajecznica z szczypiorkiem",
+      "slug": "jajecznica-z-szczypiorkiem",
+      "description": "Klasyczna jajecznica na maśle.",
+      "ingredients": "Jajka 3 szt\nMasło 1 łyżka\nSzczypiorek\nSól, pieprz",
+      "instructions": "Roztrzep jajka, smaż na maśle mieszając, dopraw i posyp szczypiorkiem.",
+      "category": 1,
+      "tags": [
+        1,
+        7
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 4,
+    "fields": {
+      "title": "Spaghetti aglio e olio",
+      "slug": "spaghetti-aglio-e-olio",
+      "description": "Błyskawiczny makaron z czosnkiem i oliwą.",
+      "ingredients": "Spaghetti 200 g\nCzosnek 3 ząbki\nOliwa 4 łyżki\nPapryczka chili 1/2 szt\nNatka pietruszki\nSól",
+      "instructions": "Ugotuj makaron al dente. Na oliwie podsmaż czosnek i chili, wymieszaj z makaronem i natką. Dopraw solą.",
+      "category": 2,
+      "tags": [
+        1,
+        2,
+        8
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 5,
+    "fields": {
+      "title": "Kurczak curry",
+      "slug": "kurczak-curry",
+      "description": "Aromatyczne curry z piersią z kurczaka.",
+      "ingredients": "Pierś z kurczaka 400 g\nPasta curry 1–2 łyżki\nMleczko kokosowe 400 ml\nCebula 1 szt\nCzosnek 2 ząbki\nOlej 1 łyżka\nSól",
+      "instructions": "Podsmaż cebulę i czosnek, dodaj kurczaka, pastę curry i mleczko kokosowe. Duś 15 min, dopraw.",
+      "category": 2,
+      "tags": [
+        5,
+        14
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 6,
+    "fields": {
+      "title": "Łosoś pieczony z cytryną",
+      "slug": "losos-pieczony-z-cytryna",
+      "description": "Delikatny łosoś pieczony w piekarniku.",
+      "ingredients": "Filet z łososia 400 g\nCytryna 1 szt\nOliwa 1 łyżka\nSól, pieprz",
+      "instructions": "Skrop łososia oliwą i sokiem z cytryny, dopraw. Piecz 12–15 min w 200°C.",
+      "category": 2,
+      "tags": [
+        13,
+        6
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 7,
+    "fields": {
+      "title": "Risotto z pieczarkami",
+      "slug": "risotto-z-pieczarkami",
+      "description": "Kremowe risotto z dodatkiem pieczarek.",
+      "ingredients": "Ryż arborio 200 g\nBulion 700 ml\nPieczarki 200 g\nCebula\nMasło\nParmezan",
+      "instructions": "Podsmaż cebulę i ryż, podlewaj bulionem mieszając. Dodaj pieczarki i parmezan.",
+      "category": 2,
+      "tags": [
+        2,
+        9,
+        11
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 8,
+    "fields": {
+      "title": "Sałatka grecka",
+      "slug": "salatka-grecka",
+      "description": "Klasyczna sałatka z fetą i oliwkami.",
+      "ingredients": "Ogórek\nPomidory\nCzerwona cebula\nSer feta\nOliwki czarne\nOliwa\nOregano\nSól",
+      "instructions": "Pokrój warzywa, dodaj fetę i oliwki. Skrop oliwą, dopraw oregano i solą.",
+      "category": 3,
+      "tags": [
+        2,
+        6,
+        11
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 9,
+    "fields": {
+      "title": "Tosty z awokado",
+      "slug": "tosty-z-awokado",
+      "description": "Szybkie tosty z pastą z awokado i jajkiem.",
+      "ingredients": "Chleb tostowy 2 kromki\nAwokado 1/2\nJajko 1 szt\nSól, pieprz\nSok z cytryny",
+      "instructions": "Rozgnieć awokado z sokiem z cytryny, dopraw. Nałóż na grzanki, dodaj jajko.",
+      "category": 3,
+      "tags": [
+        1,
+        2,
+        6,
+        7
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 10,
+    "fields": {
+      "title": "Zupa pomidorowa",
+      "slug": "zupa-pomidorowa",
+      "description": "Klasyczna zupa na bulionie z makaronem.",
+      "ingredients": "Bulion 1 l\nPomidory passatą 500 ml\nMarchew\nPietruszka\nMakaron",
+      "instructions": "Zagotuj bulion, dodaj passatę i warzywa, gotuj 15–20 min. Podaj z makaronem.",
+      "category": 4,
+      "tags": [
+        8
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 11,
+    "fields": {
+      "title": "Krem z dyni",
+      "slug": "krem-z-dyni",
+      "description": "Aksamitny krem z pieczonej dyni.",
+      "ingredients": "Dyniowe puree 500 g\nBulion 700 ml\nCebula\nImbir\nŚmietanka 50 ml",
+      "instructions": "Podsmaż cebulę z imbirem, dodaj dynię i bulion, gotuj 10 min, zblenduj, dodaj śmietankę.",
+      "category": 4,
+      "tags": [
+        2,
+        6,
+        4
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 12,
+    "fields": {
+      "title": "Brownie czekoladowe",
+      "slug": "brownie-czekoladowe",
+      "description": "Wilgotne brownie, mocno czekoladowe.",
+      "ingredients": "Czekolada gorzka 200 g\nMasło 150 g\nCukier 150 g\nJajka 3 szt\nMąka 100 g\nSól szczypta",
+      "instructions": "Rozpuść czekoladę z masłem, dodaj cukier, jajka i mąkę. Piecz 25–30 min w 180°C.",
+      "category": 5,
+      "tags": [
+        10
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 13,
+    "fields": {
+      "title": "Panna cotta z truskawkami",
+      "slug": "panna-cotta-z-truskawkami",
+      "description": "Delikatny deser na zimno.",
+      "ingredients": "Śmietanka 36% 400 ml\nCukier 60 g\nŻelatyna 8 g\nLaska wanilii\nTruskawki",
+      "instructions": "Podgrzej śmietankę z cukrem i wanilią, dodaj żelatynę. Schłódź i podaj z truskawkami.",
+      "category": 5,
+      "tags": [
+        12,
+        6
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 14,
+    "fields": {
+      "title": "Hummus klasyczny",
+      "slug": "hummus-klasyczny",
+      "description": "Gładki hummus z ciecierzycy.",
+      "ingredients": "Ciecierzyca 250 g\nTahini 2 łyżki\nCzosnek 1 ząbek\nSok z cytryny\nOliwa\nSól",
+      "instructions": "Zblenduj wszystko na gładko, dopraw do smaku.",
+      "category": 6,
+      "tags": [
+        2,
+        3,
+        4,
+        6
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 15,
+    "fields": {
+      "title": "Guacamole",
+      "slug": "guacamole",
+      "description": "Klasyczna pasta z awokado.",
+      "ingredients": "Awokado 2 szt\nCebula czerwona 1/4\nPomidor 1 szt\nLimonka\nSól\nKolendra",
+      "instructions": "Posiekaj składniki, wymieszaj z sokiem z limonki i solą.",
+      "category": 6,
+      "tags": [
+        2,
+        3,
+        6
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 16,
+    "fields": {
+      "title": "Naleśniki klasyczne (wersja ekspresowa)",
+      "slug": "nalesniki-klasyczne-wersja-ekspresowa",
+      "description": "Puszyste naleśniki idealne na śniadanie. Wersja urozmaicona z dodatkowymi wariantami przypraw i techniką przygotowania.",
+      "ingredients": "Mąka pszenna 200 g\nMleko 300 ml\nJajka 2 szt\nSzczypta soli\nMasło do smażenia\nPapryka czerwona 1 szt",
+      "instructions": "Wymieszaj składniki na gładkie ciasto. Odstaw na 10 min. Smaż cienkie placki na rozgrzanej patelni z odrobiną masła. Kontroluj przyprawy do smaku i dostosuj czas obróbki do konsystencji.",
+      "category": 2,
+      "tags": [
+        1,
+        4,
+        5,
+        7,
+        8
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 17,
+    "fields": {
+      "title": "Owsianka z owocami (klasyk domowy)",
+      "slug": "owsianka-z-owocami-klasyk-domowy",
+      "description": "Kremowa owsianka z sezonowymi owocami. Wersja urozmaicona z dodatkowymi wariantami przypraw i techniką przygotowania.",
+      "ingredients": "Płatki owsiane 60 g\nMleko lub napój roślinny 250 ml\nMiód 1 łyżka\nOwoce garść\nTofu 200 g",
+      "instructions": "Gotuj płatki w mleku 5–7 min, dodaj miód i owoce. Kontroluj przyprawy do smaku i dostosuj czas obróbki do konsystencji.",
+      "category": 1,
+      "tags": [
+        1,
+        2,
+        6,
+        12
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 18,
+    "fields": {
+      "title": "Jajecznica z szczypiorkiem (z warzywami)",
+      "slug": "jajecznica-z-szczypiorkiem-z-warzywami",
+      "description": "Klasyczna jajecznica na maśle. Wersja urozmaicona z dodatkowymi wariantami przypraw i techniką przygotowania.",
+      "ingredients": "Jajka 3 szt\nMasło 1 łyżka\nSzczypiorek\nSól, pieprz\nMleko kokosowe 100 ml",
+      "instructions": "Roztrzep jajka, smaż na maśle mieszając, dopraw i posyp szczypiorkiem. Kontroluj przyprawy do smaku i dostosuj czas obróbki do konsystencji.",
+      "category": 3,
+      "tags": [
+        1,
+        6,
+        7
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 19,
+    "fields": {
+      "title": "Spaghetti aglio e olio (bez glutenu)",
+      "slug": "spaghetti-aglio-e-olio-bez-glutenu",
+      "description": "Błyskawiczny makaron z czosnkiem i oliwą. Wersja urozmaicona z dodatkowymi wariantami przypraw i techniką przygotowania.",
+      "ingredients": "Spaghetti 200 g\nCzosnek 3 ząbki\nOliwa 4 łyżki\nPapryczka chili 1/2 szt\nNatka pietruszki\nSól\nPapryczka chili 1 szt",
+      "instructions": "Ugotuj makaron al dente. Na oliwie podsmaż czosnek i chili, wymieszaj z makaronem i natką. Dopraw solą. Kontroluj przyprawy do smaku i dostosuj czas obróbki do konsystencji.",
+      "category": 2,
+      "tags": [
+        1,
+        2,
+        4,
+        5,
+        8
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 20,
+    "fields": {
+      "title": "Kurczak curry (pikantne)",
+      "slug": "kurczak-curry-pikantne",
+      "description": "Aromatyczne curry z piersią z kurczaka. Wersja urozmaicona z dodatkowymi wariantami przypraw i techniką przygotowania.",
+      "ingredients": "Pierś z kurczaka 400 g\nPasta curry 1–2 łyżki\nMleczko kokosowe 400 ml\nCebula 1 szt\nCzosnek 2 ząbki\nOlej 1 łyżka\nSól\nJogurt naturalny 100 g",
+      "instructions": "Podsmaż cebulę i czosnek, dodaj kurczaka, pastę curry i mleczko kokosowe. Duś 15 min, dopraw. Kontroluj przyprawy do smaku i dostosuj czas obróbki do konsystencji.",
+      "category": 2,
+      "tags": [
+        5,
+        6,
+        14
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 21,
+    "fields": {
+      "title": "Łosoś pieczony z cytryną (light)",
+      "slug": "losos-pieczony-z-cytryna-light",
+      "description": "Delikatny łosoś pieczony w piekarniku. Wersja urozmaicona z dodatkowymi wariantami przypraw i techniką przygotowania.",
+      "ingredients": "Filet z łososia 400 g\nCytryna 1 szt\nOliwa 1 łyżka\nSól, pieprz\nSer mozzarella 100 g",
+      "instructions": "Skrop łososia oliwą i sokiem z cytryny, dopraw. Piecz 12–15 min w 200°C. Kontroluj przyprawy do smaku i dostosuj czas obróbki do konsystencji.",
+      "category": 3,
+      "tags": [
+        6,
+        7,
+        13
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 22,
+    "fields": {
+      "title": "Risotto z pieczarkami (dla dzieci)",
+      "slug": "risotto-z-pieczarkami-dla-dzieci",
+      "description": "Kremowe risotto z dodatkiem pieczarek. Wersja urozmaicona z dodatkowymi wariantami przypraw i techniką przygotowania.",
+      "ingredients": "Ryż arborio 200 g\nBulion 700 ml\nPieczarki 200 g\nCebula\nMasło\nParmezan\nBoczek 80 g",
+      "instructions": "Podsmaż cebulę i ryż, podlewaj bulionem mieszając. Dodaj pieczarki i parmezan. Kontroluj przyprawy do smaku i dostosuj czas obróbki do konsystencji.",
+      "category": 2,
+      "tags": [
+        1,
+        6,
+        7,
+        9,
+        11
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 23,
+    "fields": {
+      "title": "Sałatka grecka (z piekarnika)",
+      "slug": "salatka-grecka-z-piekarnika",
+      "description": "Klasyczna sałatka z fetą i oliwkami. Wersja urozmaicona z dodatkowymi wariantami przypraw i techniką przygotowania.",
+      "ingredients": "Ogórek\nPomidory\nCzerwona cebula\nSer feta\nOliwki czarne\nOliwa\nOregano\nSól\nRyż jaśminowy 150 g",
+      "instructions": "Pokrój warzywa, dodaj fetę i oliwki. Skrop oliwą, dopraw oregano i solą. Kontroluj przyprawy do smaku i dostosuj czas obróbki do konsystencji.",
+      "category": 2,
+      "tags": [
+        2,
+        6,
+        7,
+        9,
+        11
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 24,
+    "fields": {
+      "title": "Tosty z awokado (jednogarnkowe)",
+      "slug": "tosty-z-awokado-jednogarnkowe",
+      "description": "Szybkie tosty z pastą z awokado i jajkiem. Wersja urozmaicona z dodatkowymi wariantami przypraw i techniką przygotowania.",
+      "ingredients": "Chleb tostowy 2 kromki\nAwokado 1/2\nJajko 1 szt\nSól, pieprz\nSok z cytryny\nOrzechy włoskie garść",
+      "instructions": "Rozgnieć awokado z sokiem z cytryny, dopraw. Nałóż na grzanki, dodaj jajko. Kontroluj przyprawy do smaku i dostosuj czas obróbki do konsystencji.",
+      "category": 3,
+      "tags": [
+        1,
+        2,
+        6,
+        7
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 25,
+    "fields": {
+      "title": "Zupa pomidorowa (z patelni)",
+      "slug": "zupa-pomidorowa-z-patelni",
+      "description": "Klasyczna zupa na bulionie z makaronem. Wersja urozmaicona z dodatkowymi wariantami przypraw i techniką przygotowania.",
+      "ingredients": "Bulion 1 l\nPomidory passatą 500 ml\nMarchew\nPietruszka\nMakaron\nParmezan 30 g",
+      "instructions": "Zagotuj bulion, dodaj passatę i warzywa, gotuj 15–20 min. Podaj z makaronem. Kontroluj przyprawy do smaku i dostosuj czas obróbki do konsystencji.",
+      "category": 4,
+      "tags": [
+        2,
+        4,
+        8,
+        11
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 26,
+    "fields": {
+      "title": "Krem z dyni (wersja ekspresowa)",
+      "slug": "krem-z-dyni-wersja-ekspresowa",
+      "description": "Aksamitny krem z pieczonej dyni. Wersja urozmaicona z dodatkowymi wariantami przypraw i techniką przygotowania.",
+      "ingredients": "Dyniowe puree 500 g\nBulion 700 ml\nCebula\nImbir\nŚmietanka 50 ml\nBorówki 100 g",
+      "instructions": "Podsmaż cebulę z imbirem, dodaj dynię i bulion, gotuj 10 min, zblenduj, dodaj śmietankę. Kontroluj przyprawy do smaku i dostosuj czas obróbki do konsystencji.",
+      "category": 4,
+      "tags": [
+        2,
+        6,
+        4
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 27,
+    "fields": {
+      "title": "Brownie czekoladowe (klasyk domowy)",
+      "slug": "brownie-czekoladowe-klasyk-domowy",
+      "description": "Wilgotne brownie, mocno czekoladowe. Wersja urozmaicona z dodatkowymi wariantami przypraw i techniką przygotowania.",
+      "ingredients": "Czekolada gorzka 200 g\nMasło 150 g\nCukier 150 g\nJajka 3 szt\nMąka 100 g\nSól szczypta\nTuńczyk 100 g",
+      "instructions": "Rozpuść czekoladę z masłem, dodaj cukier, jajka i mąkę. Piecz 25–30 min w 180°C. Kontroluj przyprawy do smaku i dostosuj czas obróbki do konsystencji.",
+      "category": 5,
+      "tags": [
+        10,
+        13
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 49,
+    "fields": {
+      "title": "Zupa cebulowa",
+      "slug": "zupa-cebulowa",
+      "description": "Francuska zupa cebulowa z grzankami i serem.",
+      "ingredients": "Cebula 4 szt\nMasło 2 łyżki\nBulion 1 l\nBiałe wino 50 ml\nSer żółty 50 g\nBagietka",
+      "instructions": "Podsmaż cebulę na maśle, dodaj wino i bulion, gotuj 20 min. Podawaj z grzankami zapieczonymi z serem.",
+      "category": 4,
+      "tags": [
+        2,
+        11
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  },
+  {
+    "model": "recipes.recipe",
+    "pk": 50,
+    "fields": {
+      "title": "Pieczone warzywa z ziołami",
+      "slug": "pieczone-warzywa-z-ziolami",
+      "description": "Proste i zdrowe warzywa pieczone z oliwą i ziołami.",
+      "ingredients": "Ziemniaki 300 g\nMarchew 2 szt\nCukinia 1 szt\nPapryka 1 szt\nOliwa 2 łyżki\nRozmaryn, tymianek\nSól, pieprz",
+      "instructions": "Pokrój warzywa, wymieszaj z oliwą i ziołami, piecz 30–35 min w 200°C.",
+      "category": 2,
+      "tags": [
+        2,
+        6,
+        4
+      ],
+      "created_at": "2025-10-18T17:24:41.108732+00:00",
+      "updated_at": "2025-10-18T17:24:41.108732+00:00"
+    }
+  }
+]
