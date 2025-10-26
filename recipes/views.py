@@ -1,9 +1,32 @@
 from django.shortcuts import render
 from django.views.generic import ListView, DetailView
-from django.db.models import Q
+from django.db.models import Prefetch
 from django_filters.views import FilterView
-from .models import Recipe, Category, Tag
+from rest_framework.viewsets import ReadOnlyModelViewSet
+from .serializers import RecipeSerializer, RecipeDetailSerializer
+from .models import Recipe, Category, Tag, RecipeIngredient
 from.filters import RecipeFilter
+
+class RecipeViewSet(ReadOnlyModelViewSet):
+    queryset = (
+    Recipe.objects.all()
+    .order_by("-created_at")
+    .select_related("category")
+    .prefetch_related(
+        "tags",
+        Prefetch(
+            "recipeingredient_set",
+            queryset=RecipeIngredient.objects.select_related("ingredient", "unit").order_by("id"),
+        ),
+    )
+)
+    serializer_class = RecipeSerializer
+    lookup_field = 'slug'
+
+    def get_serializer_class(self):
+        if self.action == 'retrieve':
+            return RecipeDetailSerializer
+        return RecipeSerializer
 
 class RecipeListView(FilterView):
     model = Recipe

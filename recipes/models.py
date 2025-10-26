@@ -20,7 +20,7 @@ class Recipe(models.Model):
     ingredients = models.ManyToManyField(Ingredient, through='RecipeIngredient')
     instructions = models.TextField()
     prep_time = models.TextField(max_length=10, blank=True)
-    servings = models.IntegerField(max_length=10, null=True, blank=True)
+    servings = models.IntegerField(null=True, blank=True)
 
     category = models.ForeignKey('Category', on_delete=models.SET_NULL, null=True, related_name='recipes')
     tags = models.ManyToManyField('Tag', related_name='recipes', blank=True)
